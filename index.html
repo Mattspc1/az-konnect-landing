@@ -12,7 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+    <meta name="theme-color" content="#0a0e1c">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,6 +25,8 @@
         <div class="gradient-orb orb-2"></div>
         <div class="grid-overlay"></div>
     </div>
+    <canvas id="particleCanvas"></canvas>
+    <div class="scroll-progress" id="scrollProgress"></div>
 
     <!-- Sticky CTA Bar (appears on scroll) -->
     <div class="sticky-cta-bar" id="stickyCta">
@@ -94,7 +97,7 @@
                         <div class="av"><i class="ph-fill ph-user"></i></div>
                         <div class="av"><i class="ph-fill ph-user"></i></div>
                     </div>
-                    <p>Trusted by top-producing agents nationwide</p>
+                    <p>Become Top Agent in 2026</p>
                 </div>
             </div>
 
@@ -114,10 +117,15 @@
                             </div>
                         </div>
                         <div class="chat-flow">
-                            <div class="msg msg-ai">Hi John! I saw you inquired about 123 Main St. Are you looking to
+                            <div class="msg msg-ai"
+                                data-typed="Hi John! I saw you inquired about 123 Main St. Are you looking to buy in the next 3 months?">
+                                Hi John! I saw you inquired about 123 Main St. Are you looking to
                                 buy in the next 3 months?</div>
-                            <div class="msg msg-user">Yes, actually. My lease is up soon.</div>
-                            <div class="msg msg-ai">Perfect — let me book you with an agent. Does Tuesday at 2 PM work?
+                            <div class="msg msg-user" data-typed="Yes, actually. My lease is up soon.">Yes, actually. My
+                                lease is up soon.</div>
+                            <div class="msg msg-ai"
+                                data-typed="Perfect — let me book you with an agent. Does Tuesday at 2 PM work?">Perfect
+                                — let me book you with an agent. Does Tuesday at 2 PM work?
                             </div>
                         </div>
                         <div class="booked-bar">
@@ -130,30 +138,7 @@
         </div>
     </header>
 
-    <!-- ═══════════════════════════════════════════ -->
-    <!-- SOCIAL PROOF MARQUEE -->
-    <!-- ═══════════════════════════════════════════ -->
-    <div class="marquee-strip">
-        <p class="marquee-label">Trusted by agents from top brokerages</p>
-        <div class="marquee-track">
-            <div class="marquee-scroll">
-                <span>Keller Williams</span><span class="sep">·</span>
-                <span>eXp Realty</span><span class="sep">·</span>
-                <span>RE/MAX</span><span class="sep">·</span>
-                <span>Coldwell Banker</span><span class="sep">·</span>
-                <span>Century 21</span><span class="sep">·</span>
-                <span>Compass</span><span class="sep">·</span>
-                <span>Sotheby's</span><span class="sep">·</span>
-                <span>Keller Williams</span><span class="sep">·</span>
-                <span>eXp Realty</span><span class="sep">·</span>
-                <span>RE/MAX</span><span class="sep">·</span>
-                <span>Coldwell Banker</span><span class="sep">·</span>
-                <span>Century 21</span><span class="sep">·</span>
-                <span>Compass</span><span class="sep">·</span>
-                <span>Sotheby's</span><span class="sep">·</span>
-            </div>
-        </div>
-    </div>
+
 
     <!-- ═══════════════════════════════════════════ -->
     <!-- VIDEO DEMO -->
