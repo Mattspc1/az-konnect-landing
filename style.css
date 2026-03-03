@@ -1534,6 +1534,18 @@ img {
         text-align: center
     }
 
+    .sticky-cta-bar {
+        top: auto !important;
+        bottom: -80px;
+        border-bottom: none;
+        border-top: 1px solid var(--glass-border)
+    }
+
+    .sticky-cta-bar.visible {
+        top: auto !important;
+        bottom: 0
+    }
+
     .sticky-text {
         display: none
     }
