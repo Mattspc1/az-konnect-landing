@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     if (dist < CONNECTION_DIST) {
                         const opacity = (1 - dist / CONNECTION_DIST) * 0.15;
-                        ctx.strokeStyle = `rgba(139, 92, 246, ${opacity})`;
+                        ctx.strokeStyle = `rgba(30, 64, 175, ${opacity})`;
                         ctx.lineWidth = 0.5;
                         ctx.beginPath();
                         ctx.moveTo(particles[i].x, particles[i].y);
@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Draw & move particles
             for (const p of particles) {
-                ctx.fillStyle = 'rgba(167, 139, 250, 0.5)';
+                ctx.fillStyle = 'rgba(59, 130, 246, 0.5)';
                 ctx.beginPath();
                 ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
                 ctx.fill();
